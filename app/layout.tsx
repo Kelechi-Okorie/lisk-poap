@@ -33,7 +33,7 @@ export default function RootLayout({
         <nav className="flex flex-col sm:flex-row items-center justify-between p-4 sm:p-6 space-y-4 sm:space-y-0">
           <Link href="/" className="flex items-center space-x-4">
             <span className="material-symbols-outlined text-3xl sm:text-4xl text-white hover:scale-110 transition-transform cursor-pointer">token</span>
-            <h1 className="text-2xl sm:text-3xl font-bold text-white">POAP Collection</h1>
+            <h1 className="text-2xl sm:text-3xl font-bold text-white">PEOPLE</h1>
           </Link>
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
             <details className="relative w-full sm:w-auto">
