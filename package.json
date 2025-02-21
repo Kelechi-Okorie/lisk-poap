@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@material-symbols/font-400": "^0.28.1",
+    "ethers": "^6.13.5",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
