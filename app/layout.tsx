@@ -1,8 +1,8 @@
-"use client"; 
+"use client";
 import { Web3Provider, Web3Context } from "../ethers/Context"; // Adjust path if needed
 import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
-//import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +15,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export default function RootLayout({
   children,
@@ -56,7 +55,7 @@ export default function RootLayout({
 }
 
 function Web3Button() {
-  const { connectWallet, disconnectWallet, account, connected } = useContext(Web3Context);
+  const { connectWallet, disconnectWallet, connected } = useContext(Web3Context);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -70,8 +69,10 @@ function Web3Button() {
       className="w-full sm:w-auto bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-400 transition-colors"
       onClick={connected ? disconnectWallet : connectWallet}
     >
-      {connected ? account.slice(0, 6) + "..." + account.slice(-4) : "Connect Wallet"}
+      {connected ? "Disconnect Wallet" : "Connect Wallet"}
     </button>
   );
 }
 
+
+ 
