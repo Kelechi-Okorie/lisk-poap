@@ -139,6 +139,13 @@ export function Web3Provider({ children }) {
     }
   };
 
+  const disconnectWallet = () => {
+    setAccount(null);
+    setConnected(false);
+    setContract(null);
+
+  };
+
   return (
     <Web3Context.Provider
       value={{
@@ -147,6 +154,7 @@ export function Web3Provider({ children }) {
         connectWallet,
         connected,
         contract,
+        disconnectWallet,
       }}
     >
       {children}
